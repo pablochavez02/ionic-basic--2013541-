@@ -42,7 +42,7 @@ export class LoginPage implements OnInit {
       if(user!=null && user.code ==undefined){
         console.log('Successfully logged in!');
         this.menu.setTitle("presupuesto");
-        this.router.navigate(['/presupuesto']);
+        this.router.navigate(['main/presupuesto']);
       }
       else{
         if(user.code){
